@@ -1,24 +1,25 @@
 
+// rafce リアクトの雛形が作れるショートカットです🤗
+
 import React from "react";
+// cssを紐づける
 import styles from "./style.module.scss";
 import Header from "../../layout/Header";
 import SideBar from "../../layout/SideBar";
-import News from "../../components/News";
-import CalendarItem from "../../components/CalendarItem";
-import Chart from "../../components/Chart";
+import ChartBar from "../../components/ChartBar";
 
-const Home = () => {
+const Chart = () => {
   return (
     <>
       <Header />
-      <div className={styles.home}>
+      <div className={styles.chart}>
+        {/*  */}
         <SideBar />
-        <div className={styles.contents}>
-          <Chart />
-        </div>
+        <ChartBar />
+        {/*  */}
       </div>
     </>
   );
 };
 
-export default Home; 
+export default Chart;
